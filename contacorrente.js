@@ -2,7 +2,7 @@ import { Cliente } from "./cliente.js";
 
 export class ContaCorrente{
 
-
+    static numeroDeContas = 0
     #saldo = 0;
     #cliente;
 
@@ -10,6 +10,7 @@ export class ContaCorrente{
         this.#cliente = cliente,
         this.agencia = agencia,
         this.#saldo = saldo;
+        ContaCorrente.numeroDeContas += 1;
     };
 
     set cliente(novoValor){
