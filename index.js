@@ -8,9 +8,8 @@ contaRodrigo = new ContaCorrente(1001, rodrigo),
 contaThiago = new ContaCorrente(1002, thiago);
 
 
-contaRodrigo.deposito(1500);
-contaRodrigo.transferir(750, contaThiago);
-
-
+contaRodrigo.deposito(500);
 contaRodrigo.consultarSaldo()
-contaThiago.consultarSaldo()
+
+contaRodrigo.saque(100)
+contaRodrigo.consultarSaldo()
